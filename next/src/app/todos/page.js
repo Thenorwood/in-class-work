@@ -16,12 +16,12 @@ const Todos = async () => {
                 <h1 className="text-5xl text-blue-800">To Dos list</h1>
                 <ul className= "flex flex-col gap-8">
                 {
-                    todos.map( todo => {
+                    todos.map( todo => (
                         <li key={ todo.id } className="bg-teal-200">
                             <h2>{ todo.title }</h2>
                             <p>Status: { todo.completed ? 'completed' : 'not completed'}</p>
                         </li>
-                    })
+                    ))
 
                 }
                 </ul>
