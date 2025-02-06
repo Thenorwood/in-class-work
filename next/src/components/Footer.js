@@ -1,14 +1,14 @@
-const getDate = () -> {
-  
-  const date = new Date()
-  const options =
 
+
+
+const Footer = () => {
+  return(
+  <footer className='row-start-3 flex gap-6 flex-wrap items-center justify-items-center'>
+                <h3>Emerging Technologies</h3>
+                <h3>Delano Marques</h3>
+                <h3>February 5,. 2025</h3>
+            </footer>
+  )
 }
 
-
-<footer className= "row-start-3 flex gap-6 flex-wrap items-center">
-        <h3>EEmerging tech</h3>
-        <h3> Bryn Norwood</h3>
-        <h3>Feb 5, 2025</h3>
-
-      </footer>
+export default Footer
