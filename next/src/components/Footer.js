@@ -1,5 +1,10 @@
 import Link from "next/link"
 
+const getDate= () => {
+  const date = new Date()
+  const options = {year: ""}
+}
+
 
 const Footer = () => {
   return(
