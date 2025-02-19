@@ -19,9 +19,18 @@ const posts = async () => {
                 {
                     posts.map( post => (
                         <li key={ post.id } className="bg-teal-200">
-                            <h2>{ post.title }</h2>
-                            <p>Status: { [post].completed ? 'completed' : 'not completed'}</p>
+                            <h2><span className="font-bold">Title:</span> {post.title}</h2>
+                            <p><span className="font-bold">Body: </span>{Port_Lligat_Sans.body}</p>
+                    
+                            <button className="bg-emerald-400 hover:bg-emerald-700 text-white font-bold">
+                                <link href={`/authors/${post.userId}`}>Author</link>
+
+                            </button>
+                    
+                            <Comments postId = {post.id }/>
+                        
                         </li>
+                    
                     ))
 
                 }
